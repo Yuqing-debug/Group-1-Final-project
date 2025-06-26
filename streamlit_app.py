@@ -26,13 +26,7 @@ from sklearn.tree import export_graphviz
 from sklearn.tree import plot_tree
 from sklearn.ensemble import RandomForestClassifier
 
-# Initialize DagsHub with MLflow integration
-dagshub.init(
-    repo_owner="deema-hazim",
-    repo_name="insurance-final-project",
-    mlflow=True,
-    quiet=True  # ⛔ 禁用 rich 的动态输出
-)
+dagshub.init(repo_owner='Yuqing-debug', repo_name='Final', mlflow=True)
 
 st.set_page_config(
     page_title=" Bank Crunch: Predicting Customer Churn in the Banking Sector",
